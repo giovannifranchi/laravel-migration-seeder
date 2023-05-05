@@ -8,7 +8,11 @@
     </head>
     <body>
         <div class="container">
-            <h1>Template Laravel</h1>
+            <ul>
+                @foreach ($trains as $item)
+                    <li>{{$item->company}}</li>
+                @endforeach
+            </ul>
         </div>
 
     </body>
