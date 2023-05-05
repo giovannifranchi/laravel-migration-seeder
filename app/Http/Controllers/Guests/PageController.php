@@ -16,4 +16,9 @@ class PageController extends Controller
         return view('home', compact('trains'));
 
     }
+
+    public function details($id){
+        $train = Train::findOrFail($id);
+        return view('details', compact('train'));
+    }
 }
