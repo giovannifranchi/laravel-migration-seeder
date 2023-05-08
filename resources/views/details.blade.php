@@ -17,6 +17,7 @@
             <h3>Cancelled: {{$train->cancelled ? 'yes' : 'no'}}</h3>
         </div>
     </div>
+
     
 </body>
 </html>
